@@ -14,14 +14,5 @@ public class CalculateTest {
         assertThat(result, is("stop stop stop"));
     }
     
-     @Test
-    public void whenSetNullInEchoThenReturnTowSpaces() {
-       
-        Calculate calc = new Calculate();
-        String result = calc.echo("stop");
-        assertThat(result, is("  "));
-    }
-    
-        
-    }
+ }
    
