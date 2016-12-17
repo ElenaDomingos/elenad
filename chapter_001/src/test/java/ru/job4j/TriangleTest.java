@@ -7,13 +7,9 @@ import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
 
-public class TriangleTest {
-
-
-
-
 
 public class TriangleTest {
+	
     @Test
     public void whenAddDataThanShowArea() {
         Point a = new Point(15d,10d);
