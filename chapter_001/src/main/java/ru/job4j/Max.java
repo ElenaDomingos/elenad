@@ -2,9 +2,17 @@ package ru.job4j;
 
 public class Max {
 	
-	public Max(int first, int second) {
+	public max(int first, int second) {
 		
-		System.out.println(first > second ? "First is max value" : "Second is max value");
+		int max = 0;		
+		(first > second) ? max = first : max = second;
+		
+		
+	}
+	
+	public max(int first, int second, int third) {
+		
+		(third > max) ? max = third : max = max;
 		
 		
 	}
