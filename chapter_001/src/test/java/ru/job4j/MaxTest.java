@@ -7,7 +7,7 @@ import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
 
-public class PointTest {
+public class MaxTest {
     /**
     *Test add.
     */
