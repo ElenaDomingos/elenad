@@ -15,9 +15,8 @@ public class MaxTest {
 @Test
 public void WhenFirstIsBiggerThanShowFirstIsMax() { 
 
-				first = 4;
-				second = 2;
-				assertThat(Max(4,2), is("First is max value"));
+				
+				assertThat(max(4,2,1), is(4));
 				
 				
 }
