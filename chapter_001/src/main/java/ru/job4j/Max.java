@@ -3,7 +3,7 @@ package ru.job4j;
 public class Max {
 	
 
-	
+
 
 		public int max(int first, int second) {
 
@@ -16,7 +16,7 @@ public class Max {
 	
 	public int max(int first, int second, int third) {
 		
-		(third > max) ? max = third : max = max;
+		(third > max.max()) ? max = third : max = max;
 		return max;
 		
 	}
