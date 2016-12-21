@@ -10,16 +10,18 @@ public class Factorial {
 	
 /**
 *Main.
-*@param int a, int b.
+*@param  int b.
 */
 
 	
-	public int factorial(int a, int b) {
+	public int factorial(int b) {
 		
-		 for (int i=1; i<=b; i++){
-              a=a*i;
+		int result =1;
+		 while(int i>0){
+              result=result*i;
+			  i++;
         }
-		return a;
+		return result;
 	}
 	
 
