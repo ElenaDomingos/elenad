@@ -17,9 +17,9 @@ public class Factorial {
 	public int factorial(int b) {
 		
 		int result =1;
-		 while(int i>0){
-              result=result*i;
-			  i++;
+		 while(b > 0){
+              result=result*b;
+			  i--;
         }
 		return result;
 	}
