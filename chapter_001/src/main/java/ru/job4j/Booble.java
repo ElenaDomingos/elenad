@@ -2,19 +2,7 @@ package ru.job4j;
 
 public class Booble {
 
-    public static void main(String[] args) {
-
-
-        int values[] = {1, 2, 5, 87, 7};
-
-        Booble var = new Booble();
-        for (int i = 0; i < values.length; i++)
-        {
-            int x = var.booble(values);
-            System.out.println(values[i]);
-        }
-
-    }
+   
 
     public int[]  booble(int[] values) {
 
