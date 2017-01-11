@@ -16,7 +16,7 @@ public class Booble {
 
     }
 
-    public int booble(int[] values) {
+    public int[]  booble(int[] values) {
 
         for (int i = values.length - 1; i > 0; i--) {
             for (int j = 0; j < i; j++) {
