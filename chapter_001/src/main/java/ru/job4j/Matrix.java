@@ -3,51 +3,19 @@ package ru.job4j;
 /**
  * Created by Helena on 08/01/2017.
  */
-public class Matrix
-{
-    public static void main(String[] argv)
-    {
-        int m = 6;
-        int[][] A = new int[m][m];
+public class Matrix {
 
-        for (int i=0; i<m; i++)
-        {
-            for (int j=0; j<m; j++)
-            {
-                A[i][j] = m*i + j;
+
+    public int[][] rotated (int[][] values) {
+        int[][] Matrix = new int[values.length][values.length];
+
+        for (int i = 0; i < values.length; i++) {
+            for (int j = 0; j < values.length; j++) {
+                Matrix[i][j] = values[values.length - j - 1][i];
             }
         }
-
-        for (int i=0; i<m; i++)
-        {
-            for (int j=0; j<m; j++)
-            {
-                System.out.printf("%3d ", A[i][j]);
-            }
-            System.out.print("\n");
-        }
-        System.out.print("\nrotated\n\n");
-
-        for (int k=0; k<m/2; k++)
-        {
-            for (int j=k; j<m-1-k; j++)
-            {
-
-                int tmp         = A[k][j];
-                A[k][j]         = A[j][m-1-k];
-                A[j][m-1-k]     = A[m-1-k][m-1-j];
-                A[m-1-k][m-1-j] = A[m-1-j][k];
-                A[m-1-j][k]     = tmp;
-            }
-        }
-
-        for (int i=0; i<m; i++)
-        {
-            for (int j=0; j<m; j++)
-            {
-                System.out.printf("%3d ", A[i][j]);
-            }
-            System.out.print("\n");
-        }
+        return Matrix;
     }
 }
+
+
