@@ -12,7 +12,8 @@ public class RemoveDuplicate {
 
                 if (a == list[j])
                 {
-                    list[j] = null; list[j] = list[list.length - j]; }
+                    list[j] = null;
+                    list[j] = list[list.length - j]; }
                 else {
                     j++;
 
