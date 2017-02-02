@@ -14,8 +14,12 @@ public class BoobleTest {
 @Test
 public void WhenArrayIsExistThanShowResult() { 
 
-				
-				assertThat(resultArray, is(expectArray));
+				int values[] = {1,2,3,4};
+
+                int newArray[] = values.booble();
+                int resultArray[] = {4,3,2,1};
+
+				assertThat(newArray, is(resultArray));
 				
 				
 }
