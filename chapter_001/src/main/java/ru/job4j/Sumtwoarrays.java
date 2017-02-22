@@ -39,22 +39,35 @@ public static void sumarrays(int[] arr1, int[] arr2) {
 	
 	int[] arr = new int[10];
 	int x = 0;
-	for(int i=0; i<arr1.length; i++) {
+	int i = 0;
+	while(i < arr1.length) {
 		
 		
 		if(arr2[i] > arr1[i]) {
-			arr[x] = arr1[i];
+			arr[i+x] = arr1[i];
 			arr[i+1+x] = arr2[i];
-			x++;
-			
+			i++;x++;
 		}
 		else {
 			
-			arr[x] = arr2[i];
+			arr[i+x] = arr2[i];
 			arr[i+1+x] = arr1[i];
-			x++;
+			i++;x++;
 			
 		}
+		
+	}
+		
+		for (int y = arr.length - 1; y > 0; y--) {
+            for (int j = 0; j < y; j++) {
+
+                if (arr[j] > arr[j + 1]) {
+                    int tmp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = tmp;
+                }
+            }
+
 	   
 	}
 	
