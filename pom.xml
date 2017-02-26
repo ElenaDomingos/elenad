@@ -6,6 +6,7 @@
     <version>2.0</version>
     <name>junior</name>
     <url>http://job4j.ru/</url>
+	
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -14,7 +15,7 @@
     </properties>
 
     <modules>
-        <module>chapter_001</module>
+        <module>chapter_002</module>
     </modules>
 
     <dependencies>
@@ -110,23 +111,7 @@
                     </execution>
                 </executions>
             </plugin>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>findbugs-maven-plugin</artifactId>
-                <version>3.0.4</version>
-                <configuration>
-                    <xmlOutput>true</xmlOutput>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>verify</id>
-                        <phase>verify</phase>
-                        <goals>
-                            <goal>check</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
+            
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
@@ -145,7 +130,7 @@
                 </executions>
             </plugin>
             <plugin>
-                <!-- https://mvnrepository.com/artifact/org.basepom.maven/duplicate-finder-maven-plugin -->
+                
                 <groupId>org.basepom.maven</groupId>
                 <artifactId>duplicate-finder-maven-plugin</artifactId>
                 <version>1.2.1</version>
@@ -170,15 +155,15 @@
                     <printEqualFiles>false</printEqualFiles>
                     <preferLocal>true</preferLocal>
 
-                    <!-- Version 1.1.1+ -->
+                  
                     <includeBootClasspath>false</includeBootClasspath>
                     <bootClasspathProperty>sun.boot.class.path</bootClasspathProperty>
-                    <!-- Version 1.1.1+ -->
+                   
 
 
-                    <!-- Version 1.2.0+ -->
+                    
                     <includePomProjects>false</includePomProjects>
-                    <!-- Version 1.2.0+ -->
+                    
                 </configuration>
             </plugin>
         </plugins>
