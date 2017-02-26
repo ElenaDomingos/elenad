@@ -1,5 +1,10 @@
 package ru.job4j;
 
+/**
+ *Class Professions
+ *@autor Elena Domingos
+ *@since 02.25.2016
+ */
 
 public class Professions {
 
