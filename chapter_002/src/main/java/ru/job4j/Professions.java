@@ -2,35 +2,35 @@ package ru.job4j;
 
 
 public class Professions {
-	
-String name;
 
-boolean education;
-	
-int experienceyears;
+	String name;
 
-int hoursperday;
+	boolean education;
 
-int salary;
+	int experienceyears;
 
-int taxespaid;
+	int hoursperday;
+
+	int salary;
+
+	int taxespaid;
 
 
-public void work(int hoursperday) {
-	
-	for(int i = 0;i < hoursperday; i++) {
-		
-		System.out.println("Is working");
-		
+	public void work(int hoursperday) {
+
+		for(int i = 0;i < hoursperday; i++) {
+
+			System.out.println("Is working");
+
+		}
+
 	}
-	
-}	
 
-public void getSalaryAfterTaxesWasPaid(int salary, int taxespaid){
-	
-int lucro = salary - taxespaid;
-System.out.print(lucro);
+	public void getSalaryAfterTaxesWasPaid(int salary, int taxespaid){
 
-}
-	
+		int lucro = salary - taxespaid;
+		System.out.print(lucro);
+
+	}
+
 }
