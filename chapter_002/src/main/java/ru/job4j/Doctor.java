@@ -15,7 +15,7 @@ who.attend(ofmath);
 
 }
 
-public static void attend( Teacher teacher) {
+public void attend(Teacher teacher) {
 	
 	
 	
